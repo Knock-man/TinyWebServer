@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/TinyServer.dir/main.cpp.o CMakeFiles/TinyServer.dir/log/log.cpp.o CMakeFiles/TinyServer.dir/mysql/sql_connection_pool.cpp.o CMakeFiles/TinyServer.dir/threadpool/threadpool.cpp.o  -o ../bin/TinyServer  -lpthread -lmysqlclient 

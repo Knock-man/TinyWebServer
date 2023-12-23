@@ -1,0 +1,3 @@
+/home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/build/CMakeFiles/rebuild_cache.dir
+/home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/build/CMakeFiles/edit_cache.dir
+/home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/build/CMakeFiles/TinyServer.dir
