@@ -123,7 +123,7 @@ void Log::write_log(int level, const char *format, ...)
     m_mutex.lock();
     m_count++;
 
-    if(m_today != my_tm->tm_mday || m_count % m_split_lines == 0)
+    if(m_today != my_tm->tm_mday || m_count % m_split_lines == 0)//日期不同，超行
     {
         char new_log[256] = {0};
         fflush(m_fp);//将数据从程序的内存缓冲区刷新到文件中
@@ -132,13 +132,13 @@ void Log::write_log(int level, const char *format, ...)
 
         snprintf(tail,16,"%d_%02d_%02d_",my_tm->tm_yday + 1900, my_tm->tm_mon + 1, my_tm->tm_mday);
 
-        if(m_today != my_tm->tm_mday)
+        if(m_today != my_tm->tm_mday)//超天
         {
             snprintf(new_log,255,"%s%s%s",dir_name,tail,log_name);
             m_today = my_tm->tm_mday;
             m_count = 0;
         }
-        else
+        else//超行
         {
             snprintf(new_log, 255, "%s%s%s.%lld", dir_name, tail, log_name, m_count / m_split_lines);
         }
