@@ -123,6 +123,33 @@ TinyServer/fast:
 	$(MAKE) -f CMakeFiles/TinyServer.dir/build.make CMakeFiles/TinyServer.dir/build
 .PHONY : TinyServer/fast
 
+http/http_conn.o: http/http_conn.cpp.o
+
+.PHONY : http/http_conn.o
+
+# target to build an object file
+http/http_conn.cpp.o:
+	$(MAKE) -f CMakeFiles/TinyServer.dir/build.make CMakeFiles/TinyServer.dir/http/http_conn.cpp.o
+.PHONY : http/http_conn.cpp.o
+
+http/http_conn.i: http/http_conn.cpp.i
+
+.PHONY : http/http_conn.i
+
+# target to preprocess a source file
+http/http_conn.cpp.i:
+	$(MAKE) -f CMakeFiles/TinyServer.dir/build.make CMakeFiles/TinyServer.dir/http/http_conn.cpp.i
+.PHONY : http/http_conn.cpp.i
+
+http/http_conn.s: http/http_conn.cpp.s
+
+.PHONY : http/http_conn.s
+
+# target to generate assembly for a file
+http/http_conn.cpp.s:
+	$(MAKE) -f CMakeFiles/TinyServer.dir/build.make CMakeFiles/TinyServer.dir/http/http_conn.cpp.s
+.PHONY : http/http_conn.cpp.s
+
 log/log.o: log/log.cpp.o
 
 .PHONY : log/log.o
@@ -231,6 +258,60 @@ threadpool/threadpool.cpp.s:
 	$(MAKE) -f CMakeFiles/TinyServer.dir/build.make CMakeFiles/TinyServer.dir/threadpool/threadpool.cpp.s
 .PHONY : threadpool/threadpool.cpp.s
 
+timer/lst_timer.o: timer/lst_timer.cpp.o
+
+.PHONY : timer/lst_timer.o
+
+# target to build an object file
+timer/lst_timer.cpp.o:
+	$(MAKE) -f CMakeFiles/TinyServer.dir/build.make CMakeFiles/TinyServer.dir/timer/lst_timer.cpp.o
+.PHONY : timer/lst_timer.cpp.o
+
+timer/lst_timer.i: timer/lst_timer.cpp.i
+
+.PHONY : timer/lst_timer.i
+
+# target to preprocess a source file
+timer/lst_timer.cpp.i:
+	$(MAKE) -f CMakeFiles/TinyServer.dir/build.make CMakeFiles/TinyServer.dir/timer/lst_timer.cpp.i
+.PHONY : timer/lst_timer.cpp.i
+
+timer/lst_timer.s: timer/lst_timer.cpp.s
+
+.PHONY : timer/lst_timer.s
+
+# target to generate assembly for a file
+timer/lst_timer.cpp.s:
+	$(MAKE) -f CMakeFiles/TinyServer.dir/build.make CMakeFiles/TinyServer.dir/timer/lst_timer.cpp.s
+.PHONY : timer/lst_timer.cpp.s
+
+webserver.o: webserver.cpp.o
+
+.PHONY : webserver.o
+
+# target to build an object file
+webserver.cpp.o:
+	$(MAKE) -f CMakeFiles/TinyServer.dir/build.make CMakeFiles/TinyServer.dir/webserver.cpp.o
+.PHONY : webserver.cpp.o
+
+webserver.i: webserver.cpp.i
+
+.PHONY : webserver.i
+
+# target to preprocess a source file
+webserver.cpp.i:
+	$(MAKE) -f CMakeFiles/TinyServer.dir/build.make CMakeFiles/TinyServer.dir/webserver.cpp.i
+.PHONY : webserver.cpp.i
+
+webserver.s: webserver.cpp.s
+
+.PHONY : webserver.s
+
+# target to generate assembly for a file
+webserver.cpp.s:
+	$(MAKE) -f CMakeFiles/TinyServer.dir/build.make CMakeFiles/TinyServer.dir/webserver.cpp.s
+.PHONY : webserver.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -240,6 +321,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... TinyServer"
+	@echo "... http/http_conn.o"
+	@echo "... http/http_conn.i"
+	@echo "... http/http_conn.s"
 	@echo "... log/log.o"
 	@echo "... log/log.i"
 	@echo "... log/log.s"
@@ -252,6 +336,12 @@ help:
 	@echo "... threadpool/threadpool.o"
 	@echo "... threadpool/threadpool.i"
 	@echo "... threadpool/threadpool.s"
+	@echo "... timer/lst_timer.o"
+	@echo "... timer/lst_timer.i"
+	@echo "... timer/lst_timer.s"
+	@echo "... webserver.o"
+	@echo "... webserver.i"
+	@echo "... webserver.s"
 .PHONY : help
 
 

@@ -44,8 +44,6 @@ private:
     bool m_is_async; //是否同步标志位
     locker m_mutex;
     int m_close_log; //关闭日志
-    
-
 };
 
 #endif

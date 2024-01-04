@@ -125,12 +125,13 @@ void Log::write_log(int level, const char *format, ...)
 
     if(m_today != my_tm->tm_mday || m_count % m_split_lines == 0)//日期不同，超行
     {
+        std::cout<<"超行 m_count:"<<m_count<<std::endl;
         char new_log[256] = {0};
         fflush(m_fp);//将数据从程序的内存缓冲区刷新到文件中
         fclose(m_fp);
         char tail[16] = {0};
 
-        snprintf(tail,16,"%d_%02d_%02d_",my_tm->tm_yday + 1900, my_tm->tm_mon + 1, my_tm->tm_mday);
+        snprintf(tail,16,"%d_%02d_%02d_",my_tm->tm_year + 1900, my_tm->tm_mon + 1, my_tm->tm_mday);
 
         if(m_today != my_tm->tm_mday)//超天
         {
@@ -142,7 +143,9 @@ void Log::write_log(int level, const char *format, ...)
         {
             snprintf(new_log, 255, "%s%s%s.%lld", dir_name, tail, log_name, m_count / m_split_lines);
         }
+    
         m_fp = fopen(new_log,"a");
+    }
 
         m_mutex.unlock();
         //可变参
@@ -177,8 +180,6 @@ void Log::write_log(int level, const char *format, ...)
         }
 
         va_end(valst);
-        
-    }
 
 }
 

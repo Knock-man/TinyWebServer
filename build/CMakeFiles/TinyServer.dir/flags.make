@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/lock -I/home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/mysql -I/home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/log -I/home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/threadpool 
+CXX_INCLUDES = -I/home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/lock -I/home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/mysql -I/home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/log -I/home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/threadpool -I/home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/http -I/home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/timer -I/home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer 
 
