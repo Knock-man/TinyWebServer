@@ -9,6 +9,10 @@ CMakeFiles/TinyServer.dir/http/http_conn.cpp.o: ../log/log.h
 CMakeFiles/TinyServer.dir/http/http_conn.cpp.o: ../mysql/sql_connection_pool.h
 CMakeFiles/TinyServer.dir/http/http_conn.cpp.o: ../threadpool/threadpool.h
 
+CMakeFiles/TinyServer.dir/log/log.cpp.o: ../lock/locker.h
+CMakeFiles/TinyServer.dir/log/log.cpp.o: ../log/block_queue.h
+CMakeFiles/TinyServer.dir/log/log.cpp.o: ../log/log.cpp
+CMakeFiles/TinyServer.dir/log/log.cpp.o: ../log/log.h
 
 CMakeFiles/TinyServer.dir/main.cpp.o: ../lock/locker.h
 CMakeFiles/TinyServer.dir/main.cpp.o: ../log/block_queue.h
@@ -30,5 +34,12 @@ CMakeFiles/TinyServer.dir/threadpool/threadpool.cpp.o: ../threadpool/threadpool.
 
 CMakeFiles/TinyServer.dir/timer/lst_timer.cpp.o: ../timer/lst_timer.cpp
 
+CMakeFiles/TinyServer.dir/webserver.cpp.o: ../http/http_conn.h
+CMakeFiles/TinyServer.dir/webserver.cpp.o: ../lock/locker.h
+CMakeFiles/TinyServer.dir/webserver.cpp.o: ../log/block_queue.h
+CMakeFiles/TinyServer.dir/webserver.cpp.o: ../log/log.h
+CMakeFiles/TinyServer.dir/webserver.cpp.o: ../mysql/sql_connection_pool.h
+CMakeFiles/TinyServer.dir/webserver.cpp.o: ../threadpool/threadpool.h
 CMakeFiles/TinyServer.dir/webserver.cpp.o: ../webserver.cpp
+CMakeFiles/TinyServer.dir/webserver.cpp.o: ../webserver.h
 

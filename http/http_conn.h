@@ -98,7 +98,7 @@ private:
 
 public:
     static int m_epollfd;//连接套接字
-    static int m_user_count;
+    static int m_user_count;//连接用户数
     MYSQL *mysql;
     int m_state; //读为0,写为1
 private:

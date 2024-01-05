@@ -82,7 +82,7 @@ void http_conn::init(int sockfd, const sockaddr_in &addr,char *root, int TRIGMod
     //当浏览器出现连接重置时，可能是网站根目录出错或http响应格式出错或者访问的文件内容完全为空
     doc_root = root;
     m_TRIGMode = TRIGMode;//ET(1) LT(0)
-    m_close_log = close_log;
+    m_close_log = close_log;//日志
 
     strcpy(sql_user,user.c_str());
     strcpy(sql_passwd,passwd.c_str());
@@ -163,9 +163,33 @@ void http_conn::initmysql_result(connection_pool *connPool)
 {
 
 }
-
+//初始化新接受的连接
+//check_state默认为分析请求行状态
 void http_conn::init()
 {
+    mysql = NULL;
+    bytes_to_send = 0;//剩余发送字节数
+    bytes_have_send = 0;//已发送字节数
+    m_check_state = CHECK_STATE_REQUESTLINE;//主状态机状态
+    m_linger = false;
+    m_method = GET;
+    m_url = 0;
+    m_version = 0;
+    m_content_length = 0;
+    m_host = 0;
+    m_start_line = 0;
+    m_checked_idx = 0;
+    m_read_idx = 0;
+    m_write_idx = 0;
+    cgi = 0;
+    m_state = 0;
+    timer_flag = 0;
+    improv = 0;
+
+    memset(m_read_buf,'\0',READ_BUFFER_SIZE);
+    memset(m_write_buf,'\0',WRITE_BUFFER_SIZE);
+    memset(m_real_file,'\0',FILENAME_LEN);
+
 
 }
 //从m_read_buf读取，并处理请求报文

@@ -10,6 +10,10 @@ CMakeFiles/TinyServer.dir/http/http_conn.cpp.o
  /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/mysql/sql_connection_pool.h
  /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/threadpool/threadpool.h
 CMakeFiles/TinyServer.dir/log/log.cpp.o
+ /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/lock/locker.h
+ /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/log/block_queue.h
+ /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/log/log.cpp
+ /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/log/log.h
 CMakeFiles/TinyServer.dir/main.cpp.o
  /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/lock/locker.h
  /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/log/block_queue.h
@@ -31,4 +35,11 @@ CMakeFiles/TinyServer.dir/threadpool/threadpool.cpp.o
 CMakeFiles/TinyServer.dir/timer/lst_timer.cpp.o
  /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/timer/lst_timer.cpp
 CMakeFiles/TinyServer.dir/webserver.cpp.o
+ /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/http/http_conn.h
+ /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/lock/locker.h
+ /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/log/block_queue.h
+ /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/log/log.h
+ /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/mysql/sql_connection_pool.h
+ /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/threadpool/threadpool.h
  /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/webserver.cpp
+ /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/webserver.h

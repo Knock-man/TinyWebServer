@@ -22,7 +22,7 @@ aux_source_directory(. MAIN_LIST)
 
 
 #生成可执行文件
-add_executable(TinyServer ${MAIN_LIST} ${TIMER_LIST} ${HTTP_LIST} ${LOG_LIST} ${MYSQL_LIST} ${THREADPOOL_LIST})
+add_executable(TinyServer webserver.cpp ${MAIN_LIST} ${TIMER_LIST} ${HTTP_LIST} ${LOG_LIST} ${MYSQL_LIST} ${THREADPOOL_LIST})
 
 #链接库文件
 target_link_libraries(TinyServer pthread mysqlclient)

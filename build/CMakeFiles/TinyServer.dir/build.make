@@ -57,22 +57,9 @@ include CMakeFiles/TinyServer.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/TinyServer.dir/flags.make
 
-CMakeFiles/TinyServer.dir/main.cpp.o: CMakeFiles/TinyServer.dir/flags.make
-CMakeFiles/TinyServer.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TinyServer.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TinyServer.dir/main.cpp.o -c /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/main.cpp
-
-CMakeFiles/TinyServer.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TinyServer.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/main.cpp > CMakeFiles/TinyServer.dir/main.cpp.i
-
-CMakeFiles/TinyServer.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TinyServer.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/main.cpp -o CMakeFiles/TinyServer.dir/main.cpp.s
-
 CMakeFiles/TinyServer.dir/webserver.cpp.o: CMakeFiles/TinyServer.dir/flags.make
 CMakeFiles/TinyServer.dir/webserver.cpp.o: ../webserver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TinyServer.dir/webserver.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TinyServer.dir/webserver.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TinyServer.dir/webserver.cpp.o -c /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/webserver.cpp
 
 CMakeFiles/TinyServer.dir/webserver.cpp.i: cmake_force
@@ -82,6 +69,19 @@ CMakeFiles/TinyServer.dir/webserver.cpp.i: cmake_force
 CMakeFiles/TinyServer.dir/webserver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TinyServer.dir/webserver.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/webserver.cpp -o CMakeFiles/TinyServer.dir/webserver.cpp.s
+
+CMakeFiles/TinyServer.dir/main.cpp.o: CMakeFiles/TinyServer.dir/flags.make
+CMakeFiles/TinyServer.dir/main.cpp.o: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TinyServer.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TinyServer.dir/main.cpp.o -c /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/main.cpp
+
+CMakeFiles/TinyServer.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TinyServer.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/main.cpp > CMakeFiles/TinyServer.dir/main.cpp.i
+
+CMakeFiles/TinyServer.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TinyServer.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xbj/FuxianCode/fuxian_tiniweb/TinyWebServer/main.cpp -o CMakeFiles/TinyServer.dir/main.cpp.s
 
 CMakeFiles/TinyServer.dir/timer/lst_timer.cpp.o: CMakeFiles/TinyServer.dir/flags.make
 CMakeFiles/TinyServer.dir/timer/lst_timer.cpp.o: ../timer/lst_timer.cpp
@@ -150,8 +150,8 @@ CMakeFiles/TinyServer.dir/threadpool/threadpool.cpp.s: cmake_force
 
 # Object files for target TinyServer
 TinyServer_OBJECTS = \
-"CMakeFiles/TinyServer.dir/main.cpp.o" \
 "CMakeFiles/TinyServer.dir/webserver.cpp.o" \
+"CMakeFiles/TinyServer.dir/main.cpp.o" \
 "CMakeFiles/TinyServer.dir/timer/lst_timer.cpp.o" \
 "CMakeFiles/TinyServer.dir/http/http_conn.cpp.o" \
 "CMakeFiles/TinyServer.dir/log/log.cpp.o" \
@@ -161,8 +161,8 @@ TinyServer_OBJECTS = \
 # External object files for target TinyServer
 TinyServer_EXTERNAL_OBJECTS =
 
-../bin/TinyServer: CMakeFiles/TinyServer.dir/main.cpp.o
 ../bin/TinyServer: CMakeFiles/TinyServer.dir/webserver.cpp.o
+../bin/TinyServer: CMakeFiles/TinyServer.dir/main.cpp.o
 ../bin/TinyServer: CMakeFiles/TinyServer.dir/timer/lst_timer.cpp.o
 ../bin/TinyServer: CMakeFiles/TinyServer.dir/http/http_conn.cpp.o
 ../bin/TinyServer: CMakeFiles/TinyServer.dir/log/log.cpp.o
