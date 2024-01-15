@@ -3,6 +3,7 @@
 
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <cassert>
 
 #include "http/http_conn.h"
 #include "mysql/sql_connection_pool.h"
@@ -33,7 +34,7 @@ public:
     void deal_timer(util_timer *timer, int sockfd);
     bool dealclinetdata();
     void dealwithsignal(bool &timeout, bool &stop_server);
-    void withthread(int sockfd);
+    void dealwithread(int sockfd);
     void dealwithwrite(int sockfd);
 
     
@@ -62,7 +63,7 @@ public:
     int m_thread_num;
 
     //epoll_event相关
-    epoll_event event[MAX_EVENT_NUMBER];
+    epoll_event events[MAX_EVENT_NUMBER];
 
     int m_listenfd;
     int m_OPT_LINGER;
